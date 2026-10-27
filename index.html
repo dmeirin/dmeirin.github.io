@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7faf7">
+  <meta name="description" content="Diana Meirina — Content Curriculum Quality Assurance di BINUS Sokrates. Curriculum, educational technology, AI literacy, and learning design.">
+  <meta property="og:title" content="Diana Meirina | Curriculum & Learning">
+  <meta property="og:description" content="Building meaningful learning experiences through curriculum quality, technology, and AI literacy.">
+  <title>Diana Meirina — Curriculum & Learning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#24724b;--deep:#153d2b;--mint:#e8f3eb;--soft:#f7faf7;--ink:#18251e;--muted:#69776e;--line:#e1e9e2;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--soft);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button{font:inherit}
+    .wrap{width:min(1120px,calc(100% - 44px));margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.05em;font-size:1.25rem}.brand span{color:var(--green)}.navlinks{display:flex;align-items:center;gap:26px;color:#536258;font-size:.9rem}.navlinks a:hover{color:var(--green)}.nav-cta{border:1px solid #b8d0bf;border-radius:999px;padding:10px 16px;color:var(--deep)!important}
+    .hero{padding:82px 0 82px}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:.79rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}.dot{width:8px;height:8px;background:#48a56c;border-radius:50%;box-shadow:0 0 0 5px #e3f0e6}.hero h1{font-family:Manrope,sans-serif;font-size:clamp(3.4rem,7vw,6.1rem);line-height:.99;letter-spacing:-.075em;margin:23px 0 20px;font-weight:800}.hero h1 em{font-style:normal;color:var(--green)}.lead{max-width:590px;color:#56665b;font-size:1.08rem;line-height:1.85}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:13px 20px;border:1px solid transparent;font-weight:700;font-size:.9rem;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--green);color:white}.btn-primary:hover{background:var(--deep)}.btn-ghost{border-color:#d1ddd4;background:#fff;color:var(--deep)}
+    .profile-card{position:relative;min-height:395px;border-radius:28px;background:linear-gradient(145deg,#e7f2e9,#d5e9db);padding:25px;overflow:hidden;display:flex;align-items:flex-end}.profile-card:before,.profile-card:after{content:"";position:absolute;border:1px solid rgba(36,114,75,.17);border-radius:50%;width:300px;height:300px;right:-75px;top:-70px}.profile-card:after{width:220px;height:220px;right:-35px;top:-30px}.monogram{position:absolute;top:48px;left:35px;font:800 7rem/1 Manrope,sans-serif;letter-spacing:-.12em;color:rgba(36,114,75,.16)}.card-note{position:relative;z-index:1;background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.8);border-radius:18px;padding:19px;width:100%}.card-note small{color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.7rem}.card-note p{margin:7px 0 0;font-family:Manrope,sans-serif;font-weight:700;font-size:1.15rem;line-height:1.4}
+    .strip{border-block:1px solid var(--line);background:#fff}.strip-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 0;flex-wrap:wrap}.strip-label{color:var(--muted);font-size:.82rem}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 13px;color:#44564a;font-size:.82rem;background:#fff}
+    section{padding:92px 0}.section-top{max-width:680px;margin-bottom:42px}.kicker{color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.76rem}.section-title{font:800 clamp(2.1rem,4vw,3.35rem)/1.13 Manrope,sans-serif;letter-spacing:-.055em;margin:12px 0 17px}.section-desc{color:var(--muted);margin:0;max-width:650px}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:68px;align-items:start}.about-intro{font:600 1.3rem/1.65 Manrope,sans-serif;letter-spacing:-.025em;color:var(--deep);margin:0}.about-copy p{margin:0 0 17px;color:#5e6c62}.fact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:28px}.fact{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.fact strong{display:block;color:var(--deep);font-size:.95rem}.fact span{color:var(--muted);font-size:.82rem}
+    .green-section{background:#edf5ef}.expertise-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.expertise{background:rgba(255,255,255,.8);border:1px solid #dce9df;border-radius:20px;padding:25px;min-height:190px}.num{font:700 .8rem Manrope,sans-serif;color:var(--green);letter-spacing:.1em}.expertise h3{font:700 1.2rem Manrope,sans-serif;letter-spacing:-.025em;margin:17px 0 8px}.expertise p{margin:0;color:#68766c;font-size:.92rem}
+    .timeline{border-top:1px solid var(--line)}.timeline-item{display:grid;grid-template-columns:180px 1fr;gap:30px;padding:28px 0;border-bottom:1px solid var(--line)}.timeline-date{font-size:.82rem;color:var(--green);font-weight:700}.timeline h3{font:700 1.18rem Manrope,sans-serif;margin:0 0 5px}.timeline p{margin:0;color:var(--muted);font-size:.93rem}.timeline .sub{font-size:.83rem;color:#7b877f;margin-bottom:10px}
+    .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.work-card{border:1px solid var(--line);border-radius:20px;background:#fff;padding:24px}.work-icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:var(--mint);color:var(--green);font-size:1.1rem}.work-card h3{font:700 1.05rem Manrope,sans-serif;margin:20px 0 9px}.work-card p{font-size:.9rem;color:var(--muted);margin:0}
+    .feature{background:var(--deep);border-radius:28px;color:#fff;padding:42px;display:grid;grid-template-columns:1fr .8fr;gap:40px;align-items:center}.feature .kicker{color:#99d1aa}.feature .section-title{margin-bottom:14px}.feature p{color:#c4d8ca;margin:0}.feature-tags{display:flex;flex-wrap:wrap;gap:9px}.feature-tags span{border:1px solid #527563;border-radius:999px;padding:9px 12px;color:#e6f1e8;font-size:.82rem}
+    .contact{background:#fff}.contact-box{display:flex;justify-content:space-between;align-items:center;gap:30px}.contact-box .section-top{margin:0}.contact-links{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:220px}.contact-links a{color:var(--green);font-weight:700;border-bottom:1px solid #c4d9ca;padding-bottom:3px}
+    footer{padding:25px 0;color:#7b877e;font-size:.82rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.backtop{color:var(--green);font-weight:700}
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:translateY(0)}:focus-visible{outline:3px solid #7bb98c;outline-offset:4px}
+    @media(max-width:800px){.navlinks{gap:14px}.navlinks a:not(.nav-cta){display:none}.hero{padding:56px 0}.hero-grid{grid-template-columns:1fr;gap:36px}.profile-card{min-height:300px}.about-grid{grid-template-columns:1fr;gap:24px}section{padding:68px 0}.work-grid{grid-template-columns:1fr}.feature{grid-template-columns:1fr;padding:30px}.contact-box{align-items:flex-start;flex-direction:column}.timeline-item{grid-template-columns:1fr;gap:8px}}
+    @media(max-width:520px){.wrap{width:min(100% - 30px,1120px)}.nav{height:68px}.hero h1{font-size:3.5rem}.lead{font-size:1rem}.expertise-grid{grid-template-columns:1fr}.fact-grid{grid-template-columns:1fr}.strip-inner{justify-content:flex-start}.profile-card{min-height:260px}.monogram{font-size:5.5rem}.section-title{font-size:2.35rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+  </style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#home" aria-label="Diana Meirina, beranda">diana<span>.</span>meirina</a>
+  <nav class="navlinks" aria-label="Navigasi utama">
+    <a href="#about">Tentang</a><a href="#expertise">Keahlian</a><a href="#journey">Perjalanan</a><a href="#work">Fokus</a><a class="nav-cta" href="#contact">Hubungi saya ↗</a>
+  </nav>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <div class="eyebrow"><span class="dot"></span> Curriculum · Quality · Learning</div>
+        <h1>Making learning<br>matter<span>.</span><br><em>Diana Meirina</em></h1>
+        <p class="lead">Saya bekerja di persimpangan kurikulum, teknologi, dan pengalaman belajar—mendukung konten pendidikan yang terstruktur, relevan, dan bermakna bagi pendidik maupun peserta didik.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#about">Kenali perjalanan saya <span aria-hidden="true">↘</span></a>
+          <a class="btn btn-ghost" href="https://id.linkedin.com/in/diana-meirina-dharmansyah-ba2478b6" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="profile-card reveal" aria-label="Kartu profil dengan inisial DM">
+        <div class="monogram" aria-hidden="true">DM</div>
+        <div class="card-note"><small>Currently</small><p>Content Curriculum<br>Quality Assurance</p><div style="color:#607268;font-size:.88rem;margin-top:7px">BINUS Sokrates · Indonesia</div></div>
+      </div>
+    </div>
+  </section>
+  <div class="strip"><div class="wrap strip-inner"><span class="strip-label">Areas I care about</span><span class="pill">Curriculum Quality</span><span class="pill">Educational Technology</span><span class="pill">AI Literacy</span><span class="pill">Learning Design</span></div></div>
+  <section id="about">
+    <div class="wrap">
+      <div class="section-top reveal"><div class="kicker">A little about me</div><h2 class="section-title">Pendidikan yang baik dimulai dari pengalaman belajar yang dirancang dengan baik.</h2></div>
+      <div class="about-grid">
+        <p class="about-intro reveal">Saya percaya bahwa konten pembelajaran seharusnya bukan sekadar menyampaikan informasi, tetapi membantu orang memahami, mencoba, dan menerapkan pengetahuan.</p>
+        <div class="about-copy reveal">
+          <p>Saya Diana Meirina, profesional di bidang pengembangan dan quality assurance konten pendidikan. Saat ini saya bekerja di BINUS Sokrates, dengan fokus pada kualitas konten kurikulum dan pengalaman belajar.</p>
+          <p>Perjalanan saya menggabungkan pengalaman dalam pendidikan teknologi informasi, pengembangan materi pembelajaran, desain digital, dan eksplorasi pemanfaatan teknologi—termasuk AI—untuk pembelajaran.</p>
+          <p>Hal yang mendorong saya adalah menemukan cara agar kurikulum tetap terarah, materi mudah digunakan, dan teknologi hadir sebagai alat yang memperkaya proses belajar.</p>
+          <div class="fact-grid">
+            <div class="fact"><strong>Curriculum & QA</strong><span>Kualitas, konsistensi, dan relevansi konten</span></div>
+            <div class="fact"><strong>ICT Education</strong><span>Fondasi pengalaman mengajar teknologi</span></div>
+            <div class="fact"><strong>AI in Learning</strong><span>Eksplorasi AI untuk pembelajaran kreatif</span></div>
+            <div class="fact"><strong>Digital Content</strong><span>Materi dan pengalaman belajar digital</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="green-section" id="expertise">
+    <div class="wrap">
+      <div class="section-top reveal"><div class="kicker">What I bring</div><h2 class="section-title">Menghubungkan kualitas konten dengan kebutuhan belajar.</h2><p class="section-desc">Empat area yang merangkum pengalaman dan minat profesional saya.</p></div>
+      <div class="expertise-grid">
+        <article class="expertise reveal"><div class="num">01 / QUALITY</div><h3>Curriculum & Content QA</h3><p>Menjaga materi tetap jelas, konsisten, sesuai tujuan pembelajaran, dan siap digunakan dalam konteks pendidikan.</p></article>
+        <article class="expertise reveal"><div class="num">02 / TECHNOLOGY</div><h3>ICT & Digital Learning</h3><p>Menggabungkan pemahaman teknologi dengan kebutuhan pendidik dan peserta didik dalam pengalaman belajar digital.</p></article>
+        <article class="expertise reveal"><div class="num">03 / INNOVATION</div><h3>AI Literacy & Creative Learning</h3><p>Mengeksplorasi bagaimana AI dapat mendukung pembelajaran yang kreatif, relevan, dan digunakan secara bertanggung jawab.</p></article>
+        <article class="expertise reveal"><div class="num">04 / DESIGN</div><h3>Learning Content Design</h3><p>Menyusun dan mengembangkan materi yang terstruktur, mudah diikuti, serta mendorong praktik dan eksplorasi.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="journey">
+    <div class="wrap">
+      <div class="section-top reveal"><div class="kicker">My journey</div><h2 class="section-title">Pengalaman yang membentuk perspektif saya.</h2><p class="section-desc">Ringkasan perjalanan pendidikan dan profesional berdasarkan informasi publik yang tersedia.</p></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-date">2014 — Sekarang</div><div><h3>Content Quality Assurance</h3><div class="sub">BINUS Sokrates · Jakarta Barat</div><p>Berfokus pada kualitas konten pendidikan dan kurikulum. Detail ini mengikuti jabatan yang tercantum dalam profil profesional publik.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2009 — 2014</div><div><h3>ICT Teacher</h3><div class="sub">Binus Center</div><p>Mengajar materi teknologi untuk jenjang sekolah, dengan cakupan seperti dasar komputer, pemrograman, desain grafis, web, animasi, dan multimedia.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">2007 — 2009</div><div><h3>Management Assistant</h3><div class="sub">PT Multimedia Sejahtera Servitama</div><p>Pengalaman dalam koordinasi proyek, dukungan pemasaran dan administrasi, serta quality control hasil produksi.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">1999 — 2003</div><div><h3>Computer Accounting</h3><div class="sub">Universitas Bina Nusantara</div><p>Studi dengan fokus Accounting and Computer Science.</p></div></article>
+      </div>
+    </div>
+  </section>
+  <section id="work">
+    <div class="wrap">
+      <div class="section-top reveal"><div class="kicker">Areas of work</div><h2 class="section-title">Hal-hal yang ingin terus saya kembangkan.</h2><p class="section-desc">Bidang kerja yang relevan dengan pengalaman saya di pendidikan dan konten digital.</p></div>
+      <div class="work-grid">
+        <article class="work-card reveal"><div class="work-icon" aria-hidden="true">✳</div><h3>Curriculum Quality</h3><p>Keselarasan tujuan, materi, aktivitas, dan hasil pembelajaran.</p></article>
+        <article class="work-card reveal"><div class="work-icon" aria-hidden="true">⌘</div><h3>Computer Science & ICT</h3><p>Materi komputasi, logika, coding, dan penerapan teknologi di sekolah.</p></article>
+        <article class="work-card reveal"><div class="work-icon" aria-hidden="true">✧</div><h3>AI for Education</h3><p>Eksplorasi literasi AI dan pemanfaatan alat digital untuk kegiatan belajar.</p></article>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="feature reveal">
+        <div><div class="kicker">A principle I believe in</div><h2 class="section-title">Technology is powerful.<br>Learning is the purpose.</h2><p>Teknologi paling bermakna ketika membantu pendidik mengajar dengan lebih baik dan peserta didik belajar dengan lebih mendalam.</p></div>
+        <div class="feature-tags" aria-label="Prinsip kerja"><span>Purposeful design</span><span>Learning first</span><span>Quality matters</span><span>Curiosity always</span><span>Responsible AI</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="wrap contact-box">
+      <div class="section-top reveal"><div class="kicker">Let’s connect</div><h2 class="section-title">Mari berbagi ide tentang pendidikan.</h2><p class="section-desc">Terbuka untuk terhubung dan berdiskusi seputar kurikulum, teknologi pendidikan, konten pembelajaran, dan AI literacy.</p></div>
+      <div class="contact-links reveal"><a href="https://id.linkedin.com/in/diana-meirina-dharmansyah-ba2478b6" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a><a href="https://github.com/dmeirin/hi-meirina.github.io" target="_blank" rel="noopener noreferrer">Explore this website on GitHub ↗</a></div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><span>© <span id="year"></span> Diana Meirina. Built with intention.</span><a class="backtop" href="#home">Kembali ke atas ↑</a></div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const observer = ('IntersectionObserver' in window) ? new IntersectionObserver((entries)=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12}) : null;
+  document.querySelectorAll('.reveal').forEach(el=>observer?observer.observe(el):el.classList.add('visible'));
+</script>
+</body>
+</html>
