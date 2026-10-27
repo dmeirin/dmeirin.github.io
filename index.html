@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7faf7">
+  <meta name="theme-color" content="#f7f5ff">
   <meta name="description" content="Diana Meirina — Content Curriculum Quality Assurance di BINUS Sokrates. Curriculum, educational technology, AI literacy, and learning design.">
   <meta property="og:title" content="Diana Meirina | Curriculum & Learning">
   <meta property="og:description" content="Building meaningful learning experiences through curriculum quality, technology, and AI literacy.">
@@ -30,6 +30,32 @@
     @media(max-width:800px){.navlinks{gap:14px}.navlinks a:not(.nav-cta){display:none}.hero{padding:56px 0}.hero-grid{grid-template-columns:1fr;gap:36px}.profile-card{min-height:300px}.about-grid{grid-template-columns:1fr;gap:24px}section{padding:68px 0}.work-grid{grid-template-columns:1fr}.feature{grid-template-columns:1fr;padding:30px}.contact-box{align-items:flex-start;flex-direction:column}.timeline-item{grid-template-columns:1fr;gap:8px}}
     @media(max-width:520px){.wrap{width:min(100% - 30px,1120px)}.nav{height:68px}.hero h1{font-size:3.5rem}.lead{font-size:1rem}.expertise-grid{grid-template-columns:1fr}.fact-grid{grid-template-columns:1fr}.strip-inner{justify-content:flex-start}.profile-card{min-height:260px}.monogram{font-size:5.5rem}.section-title{font-size:2.35rem}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+
+    /* Purple-and-white refresh; the role card sits below the portrait so it never covers the face. */
+    :root{--green:#7651d5;--deep:#39206f;--mint:#eee8ff;--soft:#faf9ff;--ink:#211a32;--muted:#756d83;--line:#e8e1f4;--white:#fff}
+    body{background:var(--soft);color:var(--ink)}
+    .brand span,.eyebrow,.kicker,.num,.card-note small{color:var(--green)}
+    .navlinks{color:#625970}.navlinks a:hover{color:var(--green)}.nav-cta{border-color:#d5c8f1;color:var(--deep)!important;background:#fff}
+    .hero-grid{grid-template-columns:1.1fr .9fr;gap:64px}
+    .btn-primary{background:linear-gradient(135deg,#8059e6,#6540c4);color:white;box-shadow:0 8px 20px rgba(118,81,213,.18)}
+    .btn-primary:hover{background:var(--deep);box-shadow:0 12px 26px rgba(118,81,213,.24)}
+    .btn-ghost{border-color:#ded4f4;background:#fff;color:var(--deep)}
+    .profile-stack{display:grid;gap:14px}
+    .profile-card{min-height:490px;border-radius:30px;background:linear-gradient(145deg,#eee8ff,#dcd0ff);padding:0;overflow:hidden;box-shadow:0 22px 60px rgba(72,44,130,.14);border:1px solid rgba(255,255,255,.9)}
+    .profile-photo{object-position:center 24%;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+    .profile-card:hover .profile-photo{transform:scale(1.035)}
+    .profile-card:after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.45);border-radius:inherit;pointer-events:none}
+    .card-note{background:#fff;border:1px solid #e9e1f8;box-shadow:0 10px 30px rgba(61,37,105,.06);border-radius:20px;padding:20px 22px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px 18px}
+    .card-note small{grid-column:1}.card-note p{grid-column:1;margin:0}.card-note div{grid-column:2;grid-row:1/3;color:#756d83!important;font-size:.82rem!important;text-align:right}
+    .green-section{background:linear-gradient(145deg,#f0ebff,#faf9ff)}
+    .expertise{border-color:#e4dcf4;transition:transform .25s,box-shadow .25s,border-color .25s}
+    .expertise:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(72,44,130,.09);border-color:#c9b8f1}
+    .fact{transition:transform .25s,box-shadow .25s,border-color .25s}
+    .fact:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(75,47,132,.08);border-color:#d5c6f3}
+    .pill{border-color:#e5ddf5;color:#514369;transition:background .2s,transform .2s}.pill:hover{background:var(--mint);transform:translateY(-2px)}
+    @media(max-width:800px){.hero-grid{grid-template-columns:1fr;gap:36px}.profile-card{min-height:420px}}
+    @media(max-width:520px){.profile-card{min-height:360px}.card-note{grid-template-columns:1fr;gap:7px}.card-note small,.card-note p,.card-note div{grid-column:1;grid-row:auto;text-align:left}}
+
   </style>
 </head>
 <body>
@@ -51,9 +77,11 @@
           <a class="btn btn-ghost" href="https://id.linkedin.com/in/diana-meirina-dharmansyah-ba2478b6" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         </div>
       </div>
-      <div class="profile-card reveal" aria-label="Foto profil Diana Meirina">
-        <img class="profile-photo" src="profile.jpg" alt="Diana Meirina, Content Curriculum Quality Assurance di BINUS Sokrates" loading="eager" fetchpriority="high">
-        <div class="card-note"><small>Currently</small><p>Content Curriculum<br>Quality Assurance</p><div style="color:#607268;font-size:.88rem;margin-top:7px">BINUS Sokrates · Indonesia</div></div>
+      <div class="profile-stack reveal">
+        <div class="profile-card" aria-label="Foto profil Diana Meirina">
+          <img class="profile-photo" src="profile.jpg" alt="Diana Meirina, Content Curriculum Quality Assurance di BINUS Sokrates" loading="eager" fetchpriority="high">
+        </div>
+        <div class="card-note"><small>Currently</small><p>Content Curriculum<br>Quality Assurance</p><div>BINUS Sokrates · Indonesia</div></div>
       </div>
     </div>
   </section>
